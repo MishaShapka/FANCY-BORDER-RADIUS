@@ -24,6 +24,6 @@ module.exports = function() {
 			.pipe($.rename({suffix: ".min"}))
 			//Каталог в который выгружается конечный css
 			.pipe($.gulp.dest('./dist/css')) 
-      .on("end", $.browsersync.reload);
+			.on("end", $.browsersync.reload);
 	});
 };
